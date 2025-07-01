@@ -1,116 +1,60 @@
-
-/* Importa uma fonte mais estilosa */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
-
+/* 1. Diretivas gerais */
 body {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
-  padding: 20px;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto; /* centraliza a página */
 }
 
+/* Seção de introdução */
+.introducao {
+  height: 550px;
+}
+
+/* Remove o container #design-archives */
+#design-archives {
+  display: none;
+}
+
+/* 2. Cabeçalho */
 header {
-  background-color: #4f46e5;
-  color: white;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-h2 {
-  font-size: 1.4rem;
-  margin-top: 10px;
-}
-
-section {
-  background-color: white;
-  border-radius: 12px;
+  background-color: #1c1c1c; /* fundo escuro */
+  color: #ffffff;            /* fonte clara */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-h3 {
-  font-size: 1.5rem;
-  text-align: center;
-  color: #4f46e5;
-  margin-bottom: 15px;
+/* Título principal */
+header h1 {
+  margin-left: 1em; /* espaçamento lateral do título */
 }
 
-p {
-  text-indent: 1em;
-  line-height: 1.6;
+/* 3. Menus laterais */
+aside ul {
+  list-style: none; /* remove os bullets */
+  padding: 0;
 }
 
-/* Abreviações em small-caps */
-abbr {
-  font-variant: small-caps;
-  font-weight: bold;
+aside ul li {
+  margin-bottom: 1em; /* espaçamento entre itens */
+  text-align: center; /* centraliza os itens */
 }
 
-/* Rodapé moderno */
+/* 4. Rodapé com contraste */
 footer {
-  background-color: #222;
-  color: #fff;
-  margin: 40px auto 0;
+  background-color: #222; /* fundo escuro */
+  color: #fff;            /* fonte clara */
+  margin: 4% auto;        /* 4% de espaçamento externo */
   padding: 20px;
   text-align: center;
-  border-radius: 10px;
 }
 
 footer a {
   display: inline-block;
   border: 2px solid #fff;
-  padding: 0.5em 1em;
+  padding: 0.5em;
   margin: 0.5em;
   color: #fff;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-footer a:hover {
-  background-color: #4f46e5;
-}
-
-/* Menu lateral */
-aside ul {
-  list-style: none;
-  padding: 0;
-}
-
-aside ul li {
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-aside ul li a {
-  text-decoration: none;
-  color: #4f46e5;
-  font-weight: 600;
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
 }
